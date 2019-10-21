@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div>
+		<form onsubmit="box(event)">
+	    <input type="text" id="caixa">
+	    <button>click</button>
+        </form>
+        <h1 id="h1"></h1>
+	</div>
+<script type="text/javascript">
+	let caixatexto = document.getElementById('caixa')
+	let title = document.getElementById('h1')
+
+	function box(event){
+		event.preventDefault()
+		console.log(caixatexto)
+		console.log(caixatexto.value)
+		console.log(title)
+
+		title.innerHTML = 'ola ola ola'
+	}
+</script>
+</body>
+</html>
